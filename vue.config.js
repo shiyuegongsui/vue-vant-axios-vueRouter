@@ -29,5 +29,18 @@ module.exports = {
         config.plugins.delete('prefetch')
         // 移除 preload 插件
         config.plugins.delete('preload');
-    }
+    },
+    lintOnSave: true,
+    css: {
+        loaderOptions: {
+            postcss: {
+                plugins: [
+                    require('postcss-px2rem-exclude')({
+                        remUnit: 50,
+                        exclude: /node_modules|styles/i
+                    }),
+                ]
+            }
+        }
+    },
 }
