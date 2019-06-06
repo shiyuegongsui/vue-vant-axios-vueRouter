@@ -1,0 +1,53 @@
+﻿/* 1px hack */
+
+@charset "UTF-8";
+$bordercolor:rgba(0,0,0,.12);
+@mixin border {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: 0 solid $bordercolor;
+    background: transparent !important;
+}
+
+.border-all,
+.border-t,
+.border-r,
+.border-b,
+.border-l {
+    position: relative;
+}
+
+.border-all:after {
+    @include border;
+    border-width: 1px;
+}
+
+.border-t:before {
+    @include border;
+    border-top-width: 1px;
+}
+
+.border-r:after {
+    @include border;
+    border-right-width: 1px;
+}
+
+.border-b:after {
+    @include border;
+    border-bottom-width: 1px;
+}
+
+.border-l:before {
+    @include border;
+    border-left-width: 1px;
+}

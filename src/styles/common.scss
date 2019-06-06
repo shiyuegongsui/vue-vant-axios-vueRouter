@@ -1,0 +1,46 @@
+@import "./common/reset.scss";
+@import "./common/rem.scss";
+@import "./common/iconfont.scss";
+@import "./common/resetvant.scss";
+@import "./common/1px.scss";
+@import "./common/flex.scss";
+@import "./common/remfun.scss";
+
+.viewport {
+    min-width: 320px;
+    max-width: 750px;
+    width: rem(750);
+    height: 100%;
+    margin: 0 auto;
+    font-size: rem(26);
+    position: relative;
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+}
+
+.dz-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dz-bold {
+    font-weight: bold;
+}
+
+.dz-bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dz-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

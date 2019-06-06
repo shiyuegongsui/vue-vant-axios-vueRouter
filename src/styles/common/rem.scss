@@ -1,0 +1,36 @@
+﻿@charset "UTF-8";
+$screen: (320px, 360px, 375px, 384px,393px,400px,412px, 414px, 424px, 480px, 540px, 640px, 720px, 750px);
+$desinWidth: 750;
+$baserem: 15;
+$baseFontSize: ($desinWidth/$baserem);
+
+
+@each $size in $screen {
+    @media screen and (min-width: $size) {
+        $Calc_Html: $size/$baserem;
+        $Calc_Body: $Calc_Html*0.48;
+
+        html {
+            font-size: $Calc_Html;
+        }
+
+        body {
+            @if $Calc_Body >12 {
+                font-size: $Calc_Body;
+            }
+            @else {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 750px) {
+    html {
+        font-size: (100/$baserem) *1vw !important;
+    }
+}
+
+@function rem($px) {
+    @return $px / $baseFontSize * 1rem;
+}

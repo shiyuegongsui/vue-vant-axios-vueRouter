@@ -1,0 +1,148 @@
+/* CSS reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+input,
+button,
+textarea,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Arial', 'MicrosoftYaHei';
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
+    background-color: #f2f2f2;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    height: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+a,
+a:hover {
+    color: #333;
+    -webkit-touch-callout: none;
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+li {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
