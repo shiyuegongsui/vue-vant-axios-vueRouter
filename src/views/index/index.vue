@@ -10,7 +10,7 @@
 
 <script>
 import Vue from 'vue';
-import { Skeleton } from 'vant';
+    Skeleton
 Vue.use(Skeleton);
 export default {
     name: 'app',
@@ -26,9 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~@styles/common/remfun";
-
-.view-main {
+@import "~@styles/common/remfun";.view-main {
     font-size: 50px;
     font-size: rem(50);
 }
