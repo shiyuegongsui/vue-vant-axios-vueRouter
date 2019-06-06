@@ -29,6 +29,7 @@ export default {
 @import "~@styles/common/remfun";
 
 .view-main {
-    font-size: rem(30);
+    font-size: 50px;
+    font-size: rem(50);
 }
 </style>
