@@ -1,5 +1,5 @@
 # vue-vant-axios-vueRouter
-PC开发基础骨架
+移动开发基础骨架
 技术栈: vue,axios,vuex,vant,vueRouter,sass
 
 ## Project setup
